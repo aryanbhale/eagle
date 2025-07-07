@@ -415,7 +415,8 @@ body {
     .projectswrapper,
     .project-pane,
     .projects-container,
-    .fotter {
+    .fotter-main,
+    #ab-sd-tx-htg {
         display: none;
     }
 
@@ -477,7 +478,6 @@ body {
     }
 
     .cards-box {
-
         margin: 0 0 0 2%;
         height: 68%;
         box-shadow: 0 0 3px black;
@@ -508,6 +508,24 @@ body {
         font-family: "KUMBH SANS";
         padding: 0 0 1% 1%;
 
+    }
+    .m-fotter-main{
+        height: max-content;
+    }
+    .side-btn{
+        width: 100px;
+        height: 50px;
+    }
+  #fm-social {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0 0 0;
+    }
+    
+    #ft-lg-main {
+        display: flex;
+        margin: 0 0 0 13%;
     }
 
 }
