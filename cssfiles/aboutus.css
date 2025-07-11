@@ -400,6 +400,9 @@ label{
     display: flex;
     flex-direction: column ;
 }
+#pg-02-tx1{
+    width: fit-content;
+}
 
 .m-vision,.sub-sec,.sub-sec-02,#side-image-sub-sec{
     display: none;

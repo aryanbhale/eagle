@@ -515,8 +515,9 @@ main {
 #pg-02-tx2 {
     width: fit-content;
     /* background-color: #93c4ff; */
-
-
+}
+#pg-02-tx1{
+    width: 100%;
 }
 
 #pg-02-para {
