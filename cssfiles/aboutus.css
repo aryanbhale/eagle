@@ -411,6 +411,16 @@ label{
     .aboutuswrapper,.sub-sec,.sub-sec-02,.our-projects,.fotter{
         display: none;
     }
+    /* .m-assets{
+        z-index: 3;
+        height: 100vh;
+        width: 100%;
+    }
+    .m-verticals{
+        z-index: 0;
+    } */
+    
+
     .m-vision{
         display: block;
         margin: 0;
@@ -418,6 +428,7 @@ label{
         width: 100vw;
         height: 100vh;
     }
+
     .redirect{
         display: flex;
         align-items: center;

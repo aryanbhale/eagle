@@ -1406,6 +1406,7 @@ body {
     .news,
     .verticals,
     .immain,.immain-head,
+    .machinery,.assets,
     .fotter-main{
         display: none;
     }
@@ -1422,10 +1423,8 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-
-
-
     }
+    
 
     .m-slider {
         display: block;
@@ -1749,6 +1748,14 @@ body {
     }
     .ref-list{
         padding: 0 0 6% 0 ;
+    }
+    .m-assets{
+        height: 100vh;
+        width: 100%;
+    }
+    .m-machinery{
+        height: 100%;
+        width: 100%;
     }
 }
 
