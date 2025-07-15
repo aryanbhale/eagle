@@ -92,6 +92,31 @@ main {
 }
 
 /* HOVER BUTTON FOR NAV BAR ENDS */
+.contact-refrals {
+            position: fixed;
+            top: 0%;
+            width: 100%;
+            z-index: 1040;
+            /* slightly lower than navbar */
+            height: fit-content;
+            background-color: #000070;
+            padding-left: 10px;
+        }
+        
+        .navbar {
+            position: fixed;
+            top: 0;
+            /* Push below the .contact-refrals */
+            width: 100%;
+            z-index: 1050;
+        }
+        .fixed-top {
+            position: fixed;
+            top: 5% !important;
+            width: 100%;
+            z-index: 1050;
+        }
+
 .slider {
     position: relative;
     background-color: rgb(56, 56, 56);
@@ -100,7 +125,40 @@ main {
     margin-top: 0px;
     margin-bottom: 10%;
 }
+/* TESTER CODE */
+/* slider buttons */
+.btn-sl-main {
+    position: absolute;
+    margin: 24rem 0 0 100px;
+    z-index: 1;
+}
 
+.btn-01-sl,
+.btn-02-sl {
+
+    background-color: #022148;
+    color: white;
+    height: 50px;
+    width: 135px;
+    margin-right: 40px;
+    border-radius: 3px;
+    border: 0px;
+    letter-spacing: 1.45px;
+    font-family: "KUMBH Sans", serif;
+    font-weight: 450;
+    font-size: 16px;
+    font-style: normal;
+    transition: transform 0.4s ease-out;
+}
+
+
+.btn-01-sl:hover,
+.btn-02-sl:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+    transform: scale(1.06);
+}
 .sl-tg{
     position: absolute;
     width: 45rem;
@@ -129,40 +187,8 @@ main {
     opacity: 1;
     transform: translate(0);
 }
-
-
-
-
-
-/* Typing Animation */
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-/* Cursor Blinking */
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 .img-div-sl {
+
     width: 100%;
     height: 48rem;
 
@@ -314,44 +340,7 @@ main {
 }
 
 /* FOTTER HEARDINGS AND PARAGRAPHS ENDS */
-/* TESTER CODE */
-/* slider buttons */
-.slider {
-    position: relative;
-}
 
-.btn-sl-main {
-    position: absolute;
-    display: inline-block;
-    margin-top: 21rem;
-    margin-left: 130px;
-}
-
-.btn-01-sl,
-.btn-02-sl {
-    background-color: #022148;
-    color: white;
-    height: 50px;
-    width: 135px;
-    margin-right: 40px;
-    border-radius: 3px;
-    border: 0px;
-    letter-spacing: 1.45px;
-    font-family: "KUMBH Sans", serif;
-    font-weight: 450;
-    font-size: 16px;
-    font-style: normal;
-    transition: transform 0.4s ease-out;
-}
-
-
-.btn-01-sl:hover,
-.btn-02-sl:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgb(0, 0, 0);
-    transform: scale(1.06);
-}
 
 /* code for about us */
 .af-sl-pg {
