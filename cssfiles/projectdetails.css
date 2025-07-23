@@ -1,0 +1,31 @@
+html,body{
+    height: 100vh;
+    width: 100vw;
+
+}
+.projectwrapper{
+    margin: 8.5% 0 0 0;
+    height: 100%;
+    width: 100%;
+}
+.mainslider{
+    position: relative;
+    background-color: black;
+    height: 100%;
+}
+.ms-slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+}
+.ms-h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 25%;
+    font-family: "playfair display";
+    text-shadow: 10px 10px 5px rgb(32, 0, 0);
+    font-size: 130px;
+    color: white;
+}
