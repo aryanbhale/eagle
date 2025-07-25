@@ -357,7 +357,7 @@ a{
 .fotter-main {
     width: 100%;
     height: 100%;
-        background-color: #a5cfff3b;
+    background-color: #a5cfff3b;
     padding: 2.6% 0 0 0;
 }
 
@@ -471,8 +471,8 @@ a{
 @media screen and (max-width: 800px) {
 
     .projectswrapper,
-    .project-pane,
     .projects-container,
+    .filters,
     .fotter-main,
     #ab-sd-tx-htg {
         display: none;
@@ -480,7 +480,7 @@ a{
 
     .m-vision1 {
         display: block;
-        height: 100vh;
+        height: max-content;
         width: 100vw;
     }
 
@@ -518,10 +518,11 @@ a{
 
     .infoheads {
         text-align: center;
-        margin: 5% 1% 5% 0%;
+        margin: 12% 1% 5% 0%;
         font-family: "KUMBH SANS";
         font-size: 60px;
         width: fit-content;
+        text-align: center;
         font-weight: 200;
         color: rgb(0, 50, 107);
     }
@@ -588,5 +589,80 @@ a{
         display: flex;
         margin: 0 0 0 13%;
     }
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        /* background-color: black; */
+        width: 100%;
+        margin: 0;
+        padding: 10% 4% ;
+    }
+    .image-adjust {
+    height: 100%;
+    width: 100%;
+    border-radius: 3%;
+    padding: 2.8%;
+    
+}
+.partition {
+    font-family: "playfair display";
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.project-pane{
+    height: 100vh;
+    display: block;
+    position: absolute;
+    padding: 30% 0 0 0;
+    padding: 6% 0 0 0;
+}
 
+.hov-bx-p-tg{
+    margin: 0;
+    padding: 0;
+    padding: 0 4% 0 0 ;
+}
+.hov-bx-h2-tg{
+    font-size: 30px;
+    font-family: "playfair display";
+    font-weight: 700;
+}
+.hov-bx-h3-tg{
+    font-size: 20px;
+    font-family: "playfair display";
+    font-weight: 700;
+
+}
+.hov-bx-p-tg{
+    font-size: 19px;
+    font-family: "playfair display";
+    font-weight: 500;
+
+
+}
+.fltrwrp{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 8%;
+    margin: 25% 0 0 5%;
+    border-top: 0.8px solid rgb(151, 151, 151);
+    border-bottom:  0.8px solid rgb(151, 151, 151);
+    /* background-color: orange; */
+
+}
+.fs-sec{
+    width: 50%;
+    height: 100%;
+    padding: 3% 0 0 0;
+    font-size: 22px;
+    /* background-color: black; */
+    text-align: center;
+}
+#fssecl{
+    border-right: 2px solid rgb(77, 77, 77);
+}
 }
