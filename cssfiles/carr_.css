@@ -244,14 +244,16 @@
     .opp,.clients{
         display: none;
     }
-    
+    .clients-div{
+        margin: 30% 0 0 0;
+    }
 .carrers-sub-mid{
     text-align: center;
     display: flex;
     flex-direction: column;
     height: auto;
     width: 30%;
-    margin: 0 0% 0 3%;
+    margin:  0% 0 3%;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.9s ease, transform 1.1s ease;
