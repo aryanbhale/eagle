@@ -307,6 +307,66 @@ img[id^="img-c"] {
         width: 100vw;
         margin: 30% 0 0 0;
     }
+    
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cards, .cards-2 {
+  display: contents; /* Keeps the grid structure responsive */
+}
+
+.c1, .c2 {
+  border: 1.5px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.c1:hover, .c2:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+img[id^="img-c"] {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.tx-para {
+  text-align: center;
+}
+
+#head-sm {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.tx-para h2 {
+  font-size: 1.1rem;
+  margin: 0.3rem 0;
+  color: #222;
+}
+
+.tx-para p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
 
     .cl-ld-pg-h-tg {
         margin: 7% 0 0 0;
@@ -409,7 +469,7 @@ img[id^="img-c"] {
 .c1{
     height: 100%;
     width: 95%;
-    margin: 8% 5% 3% 6%;
+    margin: 8% 5% 3% 1%;
     background-color: #ffffff;
     box-shadow: 0 0 4px black;
     border-radius: 0 10% 3% 3%;
