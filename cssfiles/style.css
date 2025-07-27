@@ -1883,7 +1883,7 @@ p {
     .v-cards {
         height: max-content;
         flex-direction: column;
-        background-color: #c6e1ff56;
+        /* background-color: #c6e1ff56; */
         border-radius: 4%;
     }
 
