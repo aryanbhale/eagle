@@ -173,7 +173,7 @@ main {
     text-shadow: 10px 10px 7px black;
     font-size: 78px;
     margin-top: 20%;
-    margin-left: 14%;
+    margin-left: 11%;
     font-family: "KUMBH SANS", serif;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -1575,6 +1575,7 @@ p {
     margin: 1% 0 0 0;
 }
 
+
 /* Resolving Mobile code for Desktop code that dons't hurt desktop */
 .m-vision {
     display: none;
@@ -1609,6 +1610,7 @@ p {
     .pg-04-final,
     .news,
     .verticals,
+    #wrapper,
     .immain,.immain-head,
     .machinery,.assets,.projectwrp,
     .fotter-main{
