@@ -1,8 +1,5 @@
 
  document.addEventListener("DOMContentLoaded", function () {
-
-   
-
 // code for index animations
     const obj = document.querySelectorAll('#imgbld');
     const obj1 = document.querySelectorAll('.m-st');
@@ -17,6 +14,7 @@
     const obj10 = document.querySelectorAll('#v-hm');
     const obj11 = document.querySelectorAll('.v-cards');
     const obj12 = document.querySelectorAll('.v-container');
+    const obj13 = document.querySelectorAll('.upper-sec2-main');
     const ob = new IntersectionObserver(entries => {
         entries.forEach(entries => {
             if (entries.isIntersecting) {
@@ -37,6 +35,7 @@
     obj10.forEach(text => ob.observe(text));
     obj11.forEach(text => ob.observe(text));
     obj12.forEach(text => ob.observe(text));
+    obj13.forEach(text => ob.observe(text));
 
 
     const Mobj = document.querySelectorAll('#ov-h2');
@@ -48,6 +47,8 @@
     const Mobj6 = document.querySelectorAll('#pg-04-tp-h2');
     const Mobj7 = document.querySelectorAll('#pg-04-tp-h3');
     const Mobj8 = document.querySelectorAll('.bx');
+    const Mobj9 = document.querySelectorAll('.upper-sec2-main');
+
     const Mob = new IntersectionObserver(entries => {
         entries.forEach(entries => {
             if (entries.isIntersecting) {
@@ -64,6 +65,7 @@
     Mobj6.forEach(text => Mob.observe(text));
     Mobj7.forEach(text => Mob.observe(text));
     Mobj8.forEach(text => Mob.observe(text));
+    Mobj9.forEach(text => Mob.observe(text));
 
 }  
 
