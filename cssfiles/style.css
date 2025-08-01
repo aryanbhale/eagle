@@ -97,10 +97,18 @@ main {
             width: 100%;
             z-index: 1040;
             /* slightly lower than navbar */
-            height: fit-content;
+            height: 5%;
             background-color: #000070;
             padding-left: 10px;
+            color: white; 
+            font-family: 'kumbh sans'; 
+            font-size: 17px;
         }
+        #bluebar{
+        top: 5%; 
+        height: 1.0%; 
+        background-color: #b6d8ff;
+    }
         
         .navbar {
             position: fixed;
@@ -1519,11 +1527,9 @@ body {
 .prj-heads {
     font-family: "KUMBH SANS", serif;
     font-weight: 500;
+    font-size: 27px;
 }
-.prjshead{
-    font-family: "KUMBH SANS", serif;
-    font-weight: 500;
-}
+
 
 p {
     text-align: justify;
@@ -1657,17 +1663,32 @@ p {
     html,
     body {
         margin: 0;
-        height: 100%;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .contact-refrals{
+        color: white; 
+        font-family: 'kumbh sans'; 
+        font-size: 17px;
         width: 100%;
-        overflow-x: hidden;
-
+        height: 5%;
+        background-color: #000070;
+        padding: 0.8% 0 0 6%;
+        justify-content: space-between;
     }
-
-    html {
-        scroll-behavior: smooth;
-
+    #bluebar{
+        top: 4.09%; 
+        height: 0.9%; 
+        background-color: #b6d8ff;
     }
-
+    .fixed-top {
+            position: fixed;
+            top: 5% !important;
+            width: 100%;
+            z-index: 1050;
+        }
     .slider,
     .af-sl-pg,
     .container,
@@ -1686,7 +1707,7 @@ p {
         display: block;
         height: 100%;
         width: 100%;
-    }
+        }
 
     .m-slidercontainer {
         display: flex;
@@ -1702,7 +1723,7 @@ p {
         position: relative;
         width: inherit;
         height: 18%;
-        margin: 29% 0 0 0;
+        margin: 24% 0 0 0;
 
         #m-s-img {
             height: 100%;
@@ -1897,6 +1918,7 @@ p {
         background-color: black;
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
 
     #bk-img {
@@ -2061,10 +2083,13 @@ p {
         margin: 3% 0 0 0;
         padding: 6% 0% 0 0%;
     }
-    p{
+    .prj-p,p{
         padding: 0 0.8% 0 0.8%;
         text-align: justify;
-        padding: 8% 2% 0 2%;
+        padding: 5% 6% 0 6%;
+    }
+    .prj-lw-he{
+        font-size: 21.5px;
     }
     #rightlower{
         width: 100%;
