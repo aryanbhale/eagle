@@ -1,0 +1,17 @@
+# Enable rewriting
+RewriteEngine On
+RewriteBase /eagle/
+
+# Make sure .htaccess itself is never served
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Redirect root /eagle/ to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+
+# Optional: force no trailing slash for non-directories
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+?)/$ /$1 [R=301,L]

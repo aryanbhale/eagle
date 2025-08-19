@@ -7,6 +7,14 @@ body {
 
 
 /* FINISHED =========================================*/
+.projectDetail{
+    height: 100%;
+}
+.detailTitle{
+    font-size: 20px;
+}
+.tester{
+}
 .aboutuswrapper {
     width: 100%;
     height: 100%;
@@ -24,6 +32,7 @@ body {
     margin: 1.6% 0 0.8% 4.5%;
 
 }
+
 
 #head {
     color: #000524;
@@ -467,6 +476,8 @@ a{
 #lower {
     border: none;
 }
+
+
 
 @media screen and (max-width: 800px) {
 

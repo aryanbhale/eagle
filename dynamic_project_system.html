@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Infrastructure Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        /* Main project cards styles */
+        .card-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px;
+            padding: 15px;
+            max-width: 400px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            background: white;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .image-adjust {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        
+        .partition {
+            padding: 15px 0;
+        }
+        
+        .hov-bx-h2-tg {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .hov-bx-h3-tg {
+            color: #34495e;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+        
+        .hov-bx-p-tg {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .card-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .card-button:hover {
+            background-color: #2980b9;
+        }
+        
+        /* Project details page styles */
+        .project-details {
+            display: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .project-header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .project-header p {
+            margin: 0;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .back-button:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .project-content {
+            padding: 40px;
+        }
+        
+        .detail-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .detail-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .detail-card p {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .gallery-caption {
+            padding: 15px;
+            background: white;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        .project-list {
+            display: block;
+        }
+        
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .spec-item {
+            text-align: center;
+            padding: 20px;
+            background: #e8f4fd;
+            border-radius: 8px;
+        }
+        
+        .spec-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+        }
+        
+        .spec-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main Project List -->
+<div class="project-list" id="projectList">
+    <h1 style="text-align: center; color: #2c3e50; margin-bottom: 40px;">Water Infrastructure Projects</h1>
+    
+    <!-- Sample cards (you can add all 14 here) -->
+    <div class="card-box" data-category="water">
+        <img class="image-adjust" src="img/kolhapur-eagle-pride-commercial-complex-big (2).jpg" alt="">
+        <div class="partition">
+            <h2 class="hov-bx-h2-tg">15.5 MLD STP Panvel - Advanced Water Treatment Facility</h2>
+            <h3 class="hov-bx-h3-tg">Transforming Wastewater into Clean Water for Community Health</h3>
+            <p class="hov-bx-p-tg">Our state-of-the-art 15.5 MLD Sewage Treatment Plant in Panvel represents a milestone in sustainable water management...</p>
+            <a href="#" onclick="showProjectDetails('panvel-stp')">
+                <button class="card-button">Read More</button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="card-box" data-category="water">
+        <img class="image-adjust" src="img/kolhapur-eagle-pride-commercial-complex-big (2).jpg" alt="">
+        <div class="partition">
+            <h2 class="hov-bx-h2-tg">Adivli Kiravli ESR - Reliable Water Storage Solution</h2>
+            <h3 class="hov-bx-h3-tg">Ensuring Continuous Water Supply for Growing Communities</h3>
+            <p class="hov-bx-p-tg">The Adivli Kiravli Elevated Service Reservoir stands as a testament to modern water infrastructure excellence...</p>
+            <a href="#" onclick="showProjectDetails('adivli-kiravli')">
+                <button class="card-button">Read More</button>
+            </a>
+        </div>
+    </div>
+    
+    <div class="card-box" data-category="water">
+        <img class="image-adjust" src="img/kolhapur-eagle-pride-commercial-complex-big (2).jpg" alt="">
+        <div class="partition">
+            <h2 class="hov-bx-h2-tg">Kharghar ESR - Comprehensive Water Management Solution</h2>
+            <h3 class="hov-bx-h3-tg">Fueling Progress Through Dependable Water Distribution</h3>
+            <p class="hov-bx-p-tg">The Kharghar Elevated Service Reservoir stands at the forefront of modern water infrastructure development...</p>
+            <a href="#" onclick="showProjectDetails('kharghar')">
+                <button class="card-button">Read More</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Dynamic Project Details Page -->
+<div class="project-details" id="projectDetails">
+    <div class="project-header">
+        <button class="back-button" onclick="showProjectList()">← Back to Projects</button>
+        <h1 id="projectTitle">Project Title</h1>
+        <p id="projectSubtitle">Project Subtitle</p>
+    </div>
+    
+    <div class="project-content" id="projectContent">
+        <!-- Content will be dynamically loaded here -->
+    </div>
+</div>
+
+<script>
+// Project data - contains all project information
+const projectData = {
+    'panvel-stp': {
+        title: '15.5 MLD STP',
+        subtitle: 'Advanced Sewage Treatment Plant Serving Mumbai Metropolitan Region',
+        content: [
+            {
+                type: 'overview',
+                title: 'Project Overview',
+                text: 'The 15.5 MLD Sewage Treatment Plant in Panvel stands as a cornerstone of environmental sustainability in the Mumbai Metropolitan Region. This state-of-the-art facility processes 15.5 million liters of wastewater daily, utilizing advanced biological treatment processes to ensure the highest standards of water purification before discharge.'
+            },
+            {
+                type: 'specs',
+                title: 'Technical Specifications',
+                specs: [
+                    { number: '15.5', label: 'Million Liters Daily Capacity' },
+                    { number: '24/7', label: 'Continuous Operation' },
+                    { number: '95%', label: 'Treatment Efficiency' },
+                    { number: '2020', label: 'Completion Year' }
+                ]
+            },
+            {
+                type: 'features',
+                title: 'Key Engineering Features',
+                text: 'Our Panvel STP incorporates cutting-edge Sequential Batch Reactor (SBR) technology, automated control systems, and comprehensive odor control mechanisms. The facility includes primary treatment, secondary biological treatment, tertiary filtration, and disinfection stages, ensuring treated water meets stringent environmental discharge standards.'
+            },
+            {
+                type: 'images',
+                title: 'Project Gallery',
+                images: [
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Main Treatment Facility Exterior View' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Aeration Tanks and Biological Treatment Units' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Control Room and Automation Systems' }
+                ]
+            },
+            {
+                type: 'impact',
+                title: 'Community Impact',
+                text: 'This facility serves over 200,000 residents across Panvel and surrounding areas, significantly improving public health outcomes and environmental protection. The treated water contributes to local groundwater recharge and supports sustainable urban development in the rapidly growing Navi Mumbai region.'
+            },
+            {
+                type: 'sustainability',
+                title: 'Environmental Benefits',
+                text: 'The STP reduces organic pollution loads by over 95%, prevents contamination of local water bodies, and generates biogas for renewable energy. Our commitment to sustainability extends beyond treatment - the facility includes rainwater harvesting, solar power integration, and comprehensive waste management protocols.'
+            }
+        ]
+    },
+    
+    'adivli-kiravli': {
+        title: 'Adivli Kiravli ESR',
+        subtitle: 'Elevated Service Reservoir Ensuring Water Security for Growing Communities',
+        content: [
+            {
+                type: 'overview',
+                title: 'Project Overview',
+                text: 'The Adivli Kiravli Elevated Service Reservoir represents a strategic investment in water infrastructure, designed to meet the growing demands of residential and commercial developments in the region. This modern facility ensures consistent water pressure and availability across multiple elevation zones.'
+            },
+            {
+                type: 'specs',
+                title: 'Technical Specifications',
+                specs: [
+                    { number: '5.0', label: 'Million Liters Capacity' },
+                    { number: '45', label: 'Meters Height' },
+                    { number: '15,000', label: 'Households Served' },
+                    { number: '2019', label: 'Completion Year' }
+                ]
+            },
+            {
+                type: 'features',
+                title: 'Engineering Excellence',
+                text: 'Constructed with high-grade reinforced concrete and advanced waterproofing systems, the Adivli Kiravli ESR features dual-chamber design for continuous operation during maintenance. The facility includes automated level controls, pressure regulation systems, and comprehensive water quality monitoring equipment.'
+            },
+            {
+                type: 'images',
+                title: 'Project Gallery',
+                images: [
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'ESR Tower Structure and Supporting Infrastructure' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Water Storage Tanks and Distribution Systems' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Pump House and Control Equipment' }
+                ]
+            },
+            {
+                type: 'distribution',
+                title: 'Water Distribution Network',
+                text: 'The ESR connects to an extensive distribution network covering residential complexes, commercial establishments, and institutional facilities. Advanced SCADA systems monitor flow rates, pressure levels, and water quality parameters in real-time, ensuring optimal performance and immediate response to any system variations.'
+            },
+            {
+                type: 'quality',
+                title: 'Water Quality Assurance',
+                text: 'Every drop of water stored and distributed through the Adivli Kiravli ESR undergoes rigorous quality testing. The facility includes chlorination systems, pH adjustment, and turbidity control to maintain water quality standards throughout the distribution process, ensuring safe consumption for all users.'
+            }
+        ]
+    },
+    
+    'kharghar': {
+        title: 'Kharghar ESR',
+        subtitle: 'Comprehensive Water Management Solution for Metropolitan Development',
+        content: [
+            {
+                type: 'overview',
+                title: 'Project Overview',
+                text: 'The Kharghar Elevated Service Reservoir serves as a vital component of Navi Mumbai\'s water infrastructure, supporting one of the region\'s most dynamic residential and commercial hubs. This facility demonstrates our expertise in creating scalable water solutions for rapidly developing urban areas.'
+            },
+            {
+                type: 'specs',
+                title: 'Technical Specifications',
+                specs: [
+                    { number: '8.5', label: 'Million Liters Capacity' },
+                    { number: '50', label: 'Meters Height' },
+                    { number: '25,000', label: 'Households Served' },
+                    { number: '2021', label: 'Completion Year' }
+                ]
+            },
+            {
+                type: 'features',
+                title: 'Advanced Infrastructure',
+                text: 'The Kharghar ESR incorporates the latest in water storage technology, including seismic-resistant design, energy-efficient pumping systems, and intelligent water management controls. The facility features redundant systems to ensure uninterrupted service even during maintenance or emergency situations.'
+            },
+            {
+                type: 'images',
+                title: 'Project Gallery',
+                images: [
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Kharghar ESR Main Structure and Surrounding Area' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Multiple Storage Chambers and Distribution Points' },
+                    { src: 'img/kolhapur-eagle-pride-commercial-complex-big (2).jpg', caption: 'Modern Control Systems and Monitoring Equipment' }
+                ]
+            },
+            {
+                type: 'urban-planning',
+                title: 'Urban Development Support',
+                text: 'Strategically positioned to support Kharghar\'s master-planned development, this ESR enables sustainable growth of residential complexes, shopping centers, educational institutions, and corporate offices. The facility\'s capacity and design anticipate future expansion needs while maintaining optimal service levels.'
+            },
+            {
+                type: 'innovation',
+                title: 'Smart Water Management',
+                text: 'The Kharghar ESR features IoT-enabled monitoring systems, predictive maintenance capabilities, and remote operational controls. These innovations reduce operational costs, improve system reliability, and provide valuable data for continuous optimization of water distribution efficiency.'
+            }
+        ]
+    }
+};
+
+function showProjectDetails(projectId) {
+    const project = projectData[projectId];
+    if (!project) return;
+    
+    // Hide project list and show details
+    document.getElementById('projectList').style.display = 'none';
+    document.getElementById('projectDetails').style.display = 'block';
+    
+    // Update header
+    document.getElementById('projectTitle').textContent = project.title;
+    document.getElementById('projectSubtitle').textContent = project.subtitle;
+    
+    // Generate content
+    const contentDiv = document.getElementById('projectContent');
+    contentDiv.innerHTML = '';
+    
+    project.content.forEach(section => {
+        if (section.type === 'specs') {
+            // Create specs grid
+            const specsDiv = document.createElement('div');
+            specsDiv.className = 'detail-card';
+            specsDiv.innerHTML = `
+                <h3>${section.title}</h3>
+                <div class="specs-grid">
+                    ${section.specs.map(spec => `
+                        <div class="spec-item">
+                            <span class="spec-number">${spec.number}</span>
+                            <div class="spec-label">${spec.label}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            contentDiv.appendChild(specsDiv);
+        } else if (section.type === 'images') {
+            // Create image gallery
+            const imagesDiv = document.createElement('div');
+            imagesDiv.className = 'detail-card';
+            imagesDiv.innerHTML = `
+                <h3>${section.title}</h3>
+                <div class="image-gallery">
+                    ${section.images.map(img => `
+                        <div class="gallery-item">
+                            <img src="${img.src}" alt="${img.caption}">
+                            <div class="gallery-caption">${img.caption}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+            contentDiv.appendChild(imagesDiv);
+        } else {
+            // Create regular content card
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'detail-card';
+            cardDiv.innerHTML = `
+                <h3>${section.title}</h3>
+                <p>${section.text}</p>
+            `;
+            contentDiv.appendChild(cardDiv);
+        }
+    });
+    
+    // Scroll to top
+    window.scrollTo(0, 0);
+}
+
+function showProjectList() {
+    document.getElementById('projectDetails').style.display = 'none';
+    document.getElementById('projectList').style.display = 'block';
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>

@@ -1,6 +1,10 @@
 
  document.addEventListener("DOMContentLoaded", function () {
-// code for index animations
+
+
+
+
+    // code for index animations
     const obj = document.querySelectorAll('#imgbld');
     const obj1 = document.querySelectorAll('.m-st');
     const obj2 = document.querySelectorAll('#h-tg');
@@ -68,6 +72,4 @@
     Mobj9.forEach(text => Mob.observe(text));
 
 }  
-
-
 )

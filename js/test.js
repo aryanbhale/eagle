@@ -52,37 +52,74 @@ pobj2.forEach(card => p.observe(card));
 
 // Parse URL parameter for ?filter=category
 window.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('filter');
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('filter');
 
-    if (category) {
-        // Trigger the filter based on URL
-        filterCards(category);
+  if (category) {
+    // Trigger the filter based on URL
+    filterCards(category);
 
-        // Also highlight the matching button
-        const matchingBtn = document.querySelector(`.bt-p[data-category="${category}"]`);
-        if (matchingBtn) {
-            setActive(matchingBtn);
-        }
+    // Also highlight the matching button
+    const matchingBtn = document.querySelector(`.bt-p[data-category="${category}"]`);
+    if (matchingBtn) {
+      setActive(matchingBtn);
     }
-});
+  }
 
-  window.addEventListener('DOMContentLoaded', () => {
-    const container = document.getElementById('card-Container');
-    const cards = Array.from(container.getElementsByClassName('card-box'));
+  const container = document.getElementById('card-Container');
+  const cards = Array.from(container.getElementsByClassName('card-box'));
 
-    // Shuffle the cards array using Fisher-Yates algorithm
-    for (let i = cards.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [cards[i], cards[j]] = [cards[j], cards[i]];
-    }
+  // Shuffle the cards array using Fisher-Yates algorithm
+  for (let i = cards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [cards[i], cards[j]] = [cards[j], cards[i]];
+  }
 
-    // Clear the container and append the shuffled cards
-    container.innerHTML = '';
-    cards.forEach(card => container.appendChild(card));
+  // Clear the container and append the shuffled cards
+  container.innerHTML = '';
+  cards.forEach(card => container.appendChild(card));
+
+
+  const lenis = new lenis({
+    duration: 2222, // controls how slow the scroll is (higher = slower)
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing function
+    smooth: true
   });
 
-    
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
 
+  requestAnimationFrame(raf);
+
+  // DOM MANIPULATION
+
+});
+
+const projectPane = document.querySelector('#projectpane');
+const projectDetail = document.querySelector('.projectDetail');
+const readMoreButtons = document.querySelectorAll('.card-button');
+const goBackButton = document.querySelector('.goBackBtn');
+
+const detailTitle = document.getElementById('detailTitle');
+const detailDesc = document.getElementById('detailDesc');
+
+readMoreButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    detailTitle.textContent = button.dataset.title;
+    detailDesc.textContent = button.dataset.desc;
+
+    projectPane.classList.add('hidden');
+    projectDetail.classList.remove('hidden');
+  });
+});
+const card = document.querySelector('.tester');
+
+
+goBackButton.addEventListener('click', () => {
+  projectDetail.classList.add('hidden');
+  projectPane.classList.remove('hidden');
+});
 
 
