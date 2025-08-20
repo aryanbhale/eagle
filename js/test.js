@@ -97,29 +97,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-const projectPane = document.querySelector('#projectpane');
-const projectDetail = document.querySelector('.projectDetail');
-const readMoreButtons = document.querySelectorAll('.card-button');
-const goBackButton = document.querySelector('.goBackBtn');
+// const projectPane = document.querySelector('#projectpane');
+// const projectDetail = document.querySelector('.projectDetail');
+// const readMoreButtons = document.querySelectorAll('.card-button');
+// const goBackButton = document.querySelector('.goBackBtn');
 
-const detailTitle = document.getElementById('detailTitle');
-const detailDesc = document.getElementById('detailDesc');
+// const detailTitle = document.getElementById('detailTitle');
+// const detailDesc = document.getElementById('detailDesc');
 
-readMoreButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    detailTitle.textContent = button.dataset.title;
-    detailDesc.textContent = button.dataset.desc;
+// readMoreButtons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     detailTitle.textContent = button.dataset.title;
+//     detailDesc.textContent = button.dataset.desc;
 
-    projectPane.classList.add('hidden');
-    projectDetail.classList.remove('hidden');
-  });
-});
-const card = document.querySelector('.tester');
+//     projectPane.classList.add('hidden');
+//     projectDetail.classList.remove('hidden');
+//   });
+// });
+// const card = document.querySelector('.tester');
 
 
-goBackButton.addEventListener('click', () => {
-  projectDetail.classList.add('hidden');
-  projectPane.classList.remove('hidden');
-});
+// goBackButton.addEventListener('click', () => {
+//   projectDetail.classList.add('hidden');
+//   projectPane.classList.remove('hidden');
+// });
 
 

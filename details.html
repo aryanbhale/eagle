@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="cssfiles/style.css">
     <link rel="stylesheet" href="cssfiles/details.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="cssfiles/aboutus.css">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <script defer src="js/details.js"></script>
     <script defer src="js/test.js"></script>
+
 
 
     <!-- Bootstrap 5.3.3 -->
@@ -115,43 +122,448 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html"
-                            style="padding-left: 3rem; font-weight: 600; color: black;">Home</a>
+                        <a class="nav-link" rel="prefetch" href="index.html"
+                            style=" font-size: 15px; padding-left: 2.2rem; font-weight: 600; color: black;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html"
-                            style="padding-left: 3rem; font-weight: 600; color: rgb(0, 0, 0);">About us</a>
+                        <a class="nav-link" rel="prefetch" href="aboutus.html"
+                            style=" font-size: 15px; padding-left: 2.2rem; font-weight: 600; color: rgb(0, 0, 0);">About
+                            us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle hover" href="project.html" id="navbar-Dropdown" role="button"
-                            style="padding-left: 3rem; font-weight: 600; color: black;">Verticals</a>
+                        <a class="nav-link dropdown-toggle hover" rel="prefetch" href="project.html"
+                            id="navbar-Dropdown" role="button"
+                            style=" font-size: 15px; padding-left: 2.2rem; font-weight: 600; color: black;">Verticals</a>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="ongoingprojects.html">Ongoing Projects</a></li>
-                            <li><a class="dropdown-item" href="completedprojects.html">Delivered Projects</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown"
+                            style="font-size: 16px; border-radius: 10%;">
+                            <li><a class="dropdown-item" rel="prefetch" href="ongoingprojects.html">Ongoing Projects</a>
+                            </li>
+                            <li><a class="dropdown-item" rel="prefetch" href="completedprojects.html">Delivered
+                                    Projects</a></li>
                         </ul>
-
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="clients.html"
-                            style="padding-left: 3rem; font-weight: 600; color: black;">Client's</a>
+                        <a class="nav-link" rel="prefetch" href="clients.html"
+                            style=" font-size: 15px; padding-left: 2.2rem; font-weight: 600; color: black;">Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html"
-                            style="padding-left: 3rem; font-weight: 600; color: black;">Career's</a>
+                        <a class="nav-link" rel="prefetch" href="careers.html"
+                            style=" font-size: 15px; padding-left: 2.2rem; font-weight: 600; color: black;">Careers</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link" href="enquiry.html"
-                            style="padding-left: 2.3rem; font-weight: 600;color: black;">Enquiry</a>
+                            style="padding-left: 2.2rem; font-weight: 600;color: black;">Enquiry</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contactus.html"
-                            style="padding-left: 2.3rem; font-weight: 600; color: black;">Contact Us</a>
+                            style="padding-left: 2.2rem; font-weight: 600; color: black;">Contact Us</a>
                     </li> -->
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="bannertitle"></div>
+    <div class="crawler" id="hide">
+        <div class="cbanner">
+            <h2 class="cbh2" style="font-family: 'Times New Roman', Times, serif;">Error 404: Invalid Page Request</h2>
+            <p class="cpp1" style="text-align: center; padding: 0.8% 20%;">Oops! Youve landed on the wrong page. This
+                section isn’t accessible, and it looks like the link you followed is invalid. Please go back or provide
+                a valid link to continue.</p>
+            <a style="text-align: center; margin: 0 0 0 46%;" href="project.html">Visit Projects</a>
+        </div>
+    </div>
+    <div id="panvelstp" class="win" >
+        <div class="banner">
+            <h2 class="bh2">15.5 MLD STP Panvel - Advanced Water Treatment Facility </h2>
+        </div>
+        <div class="info">
+            <div class="partition" id="part1">
+                <h2 class="ph2">Topic</h2>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+            </div>
+            <div class="partition" id="part2">
+                <h2 class="ph2">Topic</h2>
+                <p class="pp1" id="p2p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit
+                    molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    .</p>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.
+                    oluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+            </div>
+            <div class="partition" id="part3">
+                <section class="secmain">
+                    <img class="imgadjpart" src="img/projects/15.5. MLD STP PANVEL/15.5. MLD STP PANVEL1_Page_15.jpg"
+                        alt="">
+                </section>
+                <section class="secmain">
+                    <h2 class="ph2">Topic</h2>
+                    <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                        voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde
+                        laudantium
+                        soluta saepe cumque architecto praesentium laboriosam perferendis.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <section class="gallerymain">
+        <div class="gallery style2 medium lightbox onscroll-fade-in">
+            <article>
+                <a href="images/gallery/fulls/01.jpg" class="image">
+                    <img src="images/gallery/thumbs/01.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/02.jpg" class="image">
+                    <img src="images/gallery/thumbs/02.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Feugiat Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/03.jpg" class="image">
+                    <img src="images/gallery/thumbs/03.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Amet</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/04.jpg" class="image">
+                    <img src="images/gallery/thumbs/04.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Tempus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/05.jpg" class="image">
+                    <img src="images/gallery/thumbs/05.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ultrices Magna</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/06.jpg" class="image">
+                    <img src="images/gallery/thumbs/06.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Tempus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/07.jpg" class="image">
+                    <img src="images/gallery/thumbs/07.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/08.jpg" class="image">
+                    <img src="images/gallery/thumbs/08.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Risus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/09.jpg" class="image">
+                    <img src="images/gallery/thumbs/09.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Tempus Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/10.jpg" class="image">
+                    <img src="images/gallery/thumbs/10.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Etiam</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/11.jpg" class="image">
+                    <img src="images/gallery/thumbs/11.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/12.jpg" class="image">
+                    <img src="images/gallery/thumbs/12.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        </section>
+    </div>
+    <div id="anotherproject" class="win" >
+        <div class="banner">
+            <h2 class="bh2">15.5 MLD STP Panvel - Advanced Water Treatment Facility </h2>
+        </div>
+        <div class="info">
+            <div class="partition" id="part1">
+                <h2 class="ph2">Topic</h2>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+            </div>
+            <div class="partition" id="part2">
+                <h2 class="ph2">Topic</h2>
+                <p class="pp1" id="p2p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit
+                    molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    .</p>
+                <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                    voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde laudantium
+                    soluta saepe cumque architecto praesentium laboriosam perferendis.
+                    oluta saepe cumque architecto praesentium laboriosam perferendis.</p>
+            </div>
+            <div class="partition" id="part3">
+                <section class="secmain">
+                    <img class="imgadjpart" src="img/projects/15.5. MLD STP PANVEL/15.5. MLD STP PANVEL1_Page_15.jpg"
+                        alt="">
+                </section>
+                <section class="secmain">
+                    <h2 class="ph2">Topic</h2>
+                    <p class="pp1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste suscipit molestias
+                        voluptate in minima aliquam architecto, eaque quo molestiae, dignissimos distinctio! Unde
+                        laudantium
+                        soluta saepe cumque architecto praesentium laboriosam perferendis.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <section class="gallerymain">
+        <div class="gallery style2 medium lightbox onscroll-fade-in">
+            <article>
+                <a href="images/gallery/fulls/01.jpg" class="image">
+                    <img src="images/gallery/thumbs/01.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/02.jpg" class="image">
+                    <img src="images/gallery/thumbs/02.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Feugiat Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/03.jpg" class="image">
+                    <img src="images/gallery/thumbs/03.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Amet</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/04.jpg" class="image">
+                    <img src="images/gallery/thumbs/04.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Tempus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/05.jpg" class="image">
+                    <img src="images/gallery/thumbs/05.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ultrices Magna</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/06.jpg" class="image">
+                    <img src="images/gallery/thumbs/06.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Tempus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/07.jpg" class="image">
+                    <img src="images/gallery/thumbs/07.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/08.jpg" class="image">
+                    <img src="images/gallery/thumbs/08.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Risus</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/09.jpg" class="image">
+                    <img src="images/gallery/thumbs/09.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Tempus Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/10.jpg" class="image">
+                    <img src="images/gallery/thumbs/10.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Sed Etiam</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/11.jpg" class="image">
+                    <img src="images/gallery/thumbs/11.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Magna Lorem</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+            <article>
+                <a href="images/gallery/fulls/12.jpg" class="image">
+                    <img src="images/gallery/thumbs/12.jpg" alt="" />
+                </a>
+                <div class="caption">
+                    <h3>Ipsum Dolor</h3>
+                    <p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+                    <ul class="actions fixed">
+                        <li><span class="button small">Details</span></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        </section>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
 </body>
+
 </html>

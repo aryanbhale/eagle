@@ -1,0 +1,113 @@
+.win{
+    height: max-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.cbanner{
+    width: 100%;
+    height: 60%;
+    padding: 14% 0 0 0%;
+}
+.cbh2{
+    color: rgb(78, 78, 78);
+    text-align: center;
+    /* text-shadow: 0px 0px 12px rgb(255, 255, 255); */
+    font-size: 40px;
+    font-family: "kumbh sans";
+    font-weight: 500;
+}
+.cpp1{
+    color: rgb(78, 78, 78);
+
+    font-family: "KUMBH SANS";
+    font-weight: 300;
+    font-size: 20px;
+    padding: 3%;
+}
+.banner{
+    width: 100%;
+    height: 20rem;
+    padding: 14% 0 0 0%;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(205, 255, 182, 0.014)), 
+        url(../img/projects/15.5.\ MLD\ STP\ PANVEL/15.5.\ MLD\ STP\ PANVEL1_Page_15.jpg)no-repeat center center / cover;
+    background-size: cover;   /* fills the whole area, may crop */
+    background-attachment: fixed; /* (optional) gives a parallax effect */
+    background-color: black;
+}
+
+    .bh2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* text-shadow: 0px 0px 12px rgb(255, 255, 255); */
+    font-size: 40px;
+    font-family: "kumbh sans";
+    font-weight: 500;
+}
+.ph2,.pp1{
+    font-family: "KUMBH SANS";
+    font-weight: 300;
+    font-size: 30px;
+    padding: 3%;
+}
+.pp1{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.info{
+    display: flex;
+    height: 80%;
+    padding: 3% 1%;
+    /* background-color: black; */
+}
+.partition{
+    height: max-content;
+    width: 33.3%;
+    padding: 0% ;
+}
+#part1{
+    /* background-color: azure; */
+    width: 26%;
+}
+#part2{
+    /* background-color: rgb(175, 221, 221); */
+    width: 45%;
+    padding: 0 2% 0 0;
+}
+#part3{
+    /* background-color: rgb(166, 167, 167); */
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    padding: 0 1% 0 0;
+}
+.secmain{
+    /* background-color: orange; */
+}
+.imgadjpart{
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    border-radius: 5%;
+}
+#uniquetitle{
+    display: none;
+}
+.crawler{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#p2p1{
+    padding: 0% 3%;
+}
+.gallerymain{
+    width: 100%;
+    padding: 10% 0%;
+}
+#anotherproject{
+}
