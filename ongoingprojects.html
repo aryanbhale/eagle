@@ -8,6 +8,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="cssfiles/style.css">
     <link rel="stylesheet" href="cssfiles/abtus.css">
+    <script defer src="js/details.js"></script>
     <script defer src="js/test.js"></script>
 
 
@@ -31,6 +32,17 @@
 
     <!-- JS -->
     <script src="script.js"></script>
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS50NSWMCP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS50NSWMCP');
+    </script>
+    <!-- END GOOGLE TAG MANAGER -->
     <title>Eagle Infra India | Ongoing Projects </title>
 </head>
 <style>
@@ -95,7 +107,7 @@
                 class="fa-brands fa-youtube" style="color: #ffffff; 
         margin: 0.5% 0 0 2%;"></i></a>
     </div>
-<section class="contact-refrals" id="bluebar"></section>
+    <section class="contact-refrals" id="bluebar"></section>
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" style="height: 64px;">
@@ -130,7 +142,7 @@
                             style="padding-left: 2.3rem; font-weight: 600; color: black;">Client's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html"
+                        <a class="nav-link" href="career.html"
                             style="padding-left: 2.3rem; font-weight: 600; color: black;">Career's</a>
                     </li>
                     <!-- <li class="nav-item">
@@ -237,8 +249,8 @@
         <div id="card-Container">
             <div class="majorcards" data-category="completed">
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/15.5. MLD STP PANVEL/15.5. MLD STP PANVEL1_Page_15.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu"
+                        src="img/projects/15.5. MLD STP PANVEL/15.5. MLD STP PANVEL1_Page_15.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">15.5 MLD STP Panvel - Advanced Water Treatment Facility</h2>
                         <h3 class="hov-bx-h3-tg">Transforming Wastewater into Clean Water for Community Health</h3>
@@ -247,16 +259,15 @@
                             facility processes millions of liters daily, ensuring clean water flows back into the
                             ecosystem while protecting public health and environmental integrity for generations to
                             come.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a > --><button onclick="goToDetails('panvelstp')" class="card-button">Read
+                            More</button><!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 2: ADIVLI KIRAVLI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/ADIVLI KIRAVLI ESR1/ADIVLI KIRAVLI ESR1_Page_2.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu"
+                        src="img/projects/ADIVLI KIRAVLI ESR1/ADIVLI KIRAVLI ESR1_Page_2.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Adivli Kiravli ESR - Reliable Water Storage Solution</h2>
                         <h3 class="hov-bx-h3-tg">Ensuring Continuous Water Supply for Growing Communities</h3>
@@ -264,15 +275,15 @@
                             modern water infrastructure excellence. Engineered to meet the growing demands of the
                             community, this strategic water storage facility ensures uninterrupted supply while
                             maintaining optimal water pressure and quality standards for thousands of families.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('adivliesrkiravli')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 3: BHINGARI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/BHINGARI ESR1/BHINGARI ESR1_Page_11.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/BHINGARI ESR1/BHINGARI ESR1_Page_11.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Bhingari ESR - Community-Centered Water Infrastructure</h2>
@@ -282,16 +293,15 @@
                             facility ensures consistent water distribution, supporting local development and improving
                             quality of life for residents across the Bhingari region through reliable, safe water
                             access.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('bhingariesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 4: GHOT ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/GHOT ESR1/GHOT ESR1_Page_10.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/GHOT ESR1/GHOT ESR1_Page_10.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Ghot ESR - Strategic Water Distribution Hub</h2>
                         <h3 class="hov-bx-h3-tg">Elevating Water Security Through Smart Infrastructure Design</h3>
@@ -299,16 +309,15 @@
                             water distribution systems. Strategically positioned to serve the community's growing needs,
                             this infrastructure project delivers consistent water pressure and quality, fostering
                             economic growth and enhancing the daily lives of residents throughout the Ghot area.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('ghotesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 5: JUI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/JUI ESR1/JUI ESR1_Page_12.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/JUI ESR1/JUI ESR1_Page_12.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Jui ESR - Excellence in Water Storage Engineering</h2>
                         <h3 class="hov-bx-h3-tg">Powering Community Growth with Dependable Water Solutions</h3>
@@ -317,15 +326,15 @@
                             materials and proven engineering principles, this facility ensures reliable water
                             distribution while supporting the region's development aspirations and improving public
                             health outcomes.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('juiesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 6: KALAMBOLI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KALAMBOLI ESR1/KALAMBOLI ESR1_Page_12.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KALAMBOLI ESR1/KALAMBOLI ESR1_Page_12.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Kalamboli ESR - Modern Water Infrastructure Landmark</h2>
@@ -335,15 +344,15 @@
                             state-of-the-art facility ensures consistent water availability while meeting stringent
                             quality standards, contributing to Kalamboli's emergence as a thriving residential and
                             commercial hub.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('kalambohiesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 7: KALUNDRE ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KALUNDRE ESR1/KALUNDRE ESR1_Page_11.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KALUNDRE ESR1/KALUNDRE ESR1_Page_11.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Kalundre ESR - Innovative Water Distribution Center</h2>
@@ -352,16 +361,15 @@
                             engineering excellence and community service. This thoughtfully designed water storage
                             facility ensures optimal distribution across the region, supporting local businesses,
                             schools, and homes with reliable access to clean, safe water every day of the year.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('kalundreesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 8: KAMOTHE ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KAMOTHE/KAMOTHE 2.1_Page_03.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KAMOTHE/KAMOTHE 2.1_Page_03.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Kamothe ESR - Premier Water Storage Facility</h2>
                         <h3 class="hov-bx-h3-tg">Enhancing Life Quality Through Superior Water Infrastructure</h3>
@@ -369,15 +377,15 @@
                             water infrastructure that truly serves people. Engineered with precision and built to last,
                             this facility provides uninterrupted water supply to support the vibrant Kamothe community's
                             residential, commercial, and educational needs with unwavering reliability.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('kamotheesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 9: KHARGHAR ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KHARGHAR ESR/KHARGHAR ESR1_Page_11.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KHARGHAR ESR/KHARGHAR ESR1_Page_11.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Kharghar ESR - Comprehensive Water Management Solution</h2>
@@ -386,15 +394,15 @@
                             water infrastructure development. Serving one of the region's most dynamic communities, this
                             expertly engineered facility ensures consistent water flow and pressure, supporting
                             Kharghar's continued growth as a premier residential and business destination.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('khargharesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 10: KOYNA VILLE ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KOYNA VILLE/KOYNA VILLE1_Page_11.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KOYNA VILLE/KOYNA VILLE1_Page_11.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Koyna Ville ESR - Sustainable Water Infrastructure Excellence</h2>
@@ -404,16 +412,15 @@
                             facility provides reliable water storage and distribution while preserving the natural
                             beauty of the Koyna region, ensuring clean water access for current and future generations.
                         </p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('koynavilleesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 11: MURBI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/MURBI/MURBI ESR1_Page_4.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/MURBI/MURBI ESR1_Page_4.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Murbi ESR - Community-First Water Infrastructure</h2>
                         <h3 class="hov-bx-h3-tg">Strengthening Communities Through Reliable Water Access</h3>
@@ -422,16 +429,15 @@
                             optimal water distribution throughout the region, supporting local agriculture, industry,
                             and households while maintaining the highest standards of water quality and system
                             reliability.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('murbiesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 12: PADGHE ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/PADGHE ESR/PADGHE ESR1_Page_11.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/PADGHE ESR/PADGHE ESR1_Page_11.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Padghe ESR - Advanced Water Distribution Network</h2>
                         <h3 class="hov-bx-h3-tg">Empowering Communities with Consistent Water Solutions</h3>
@@ -439,16 +445,15 @@
                             infrastructure engineering tailored for community needs. This robust facility ensures steady
                             water supply and optimal pressure distribution, supporting the daily lives of families,
                             businesses, and institutions throughout the Padghe area with unwavering dependability.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('padgheesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 13: PENDHAR ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/PENDHAR/PENDHAR ESR1_Page_05.jpg"
-                        alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/PENDHAR/PENDHAR ESR1_Page_05.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Pendhar ESR - Integrated Water Storage Excellence</h2>
                         <h3 class="hov-bx-h3-tg">Building Tomorrow's Water Security Today</h3>
@@ -456,15 +461,15 @@
                             water infrastructure development. Designed with future growth in mind, this facility
                             provides comprehensive water storage and distribution services, ensuring every resident and
                             business in Pendhar enjoys reliable access to clean, safe water throughout the year.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('pendharesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
 
                 <!-- Card 14: ROAD PALI ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/ROAD PALI ESR/ROADPALI ESR1_Page_06.jpg"
+                    <img class="image-adjust" id="ld-lu" src="img/projects/ROAD PALI ESR/ROADPALI ESR1_Page_06.webp"
                         alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Road Pali ESR - Strategic Water Infrastructure Hub</h2>
@@ -474,9 +479,9 @@
                             facility ensures efficient water distribution across the region, supporting economic
                             development and improving quality of life for residents through consistent, high-quality
                             water access.</p>
-                        <a href="#">
-                            <button class="card-button">Read More</button>
-                        </a>
+                        <!-- <a href="#"> -->
+                            <button onclick="goToDetails('roadpaliesr')" class="card-button">Read More</button>
+                        <!-- </a> -->
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -490,7 +495,8 @@
                             including Shembal Pimpari, Gunj, Mahur, Darwha, and Manora. It boosts accessibility,
                             facilitates smoother logistics, and supports rural-urban trade development across
                             Maharashtra’s interior road networks.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('yavatmalroads')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -503,11 +509,12 @@
                             movement across key industrial belts. The work enhances freight efficiency and regional
                             economic activity, serving as a critical artery between Amravati and Chikhli under national
                             connectivity goals.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('amravatichikhli')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
-                <div class="card-box" data-category="mining">
-                    <img class="image-adjust" src="img/OB Removal for UKNI Deep OCM, Wani Area.jpeg" alt="">
+                 <div class="card-box" data-category="mining">
+                    <img class="image-adjust" src="img/projects/coal/IMG-20250820-WA0012.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">OB Removal for UKNI Deep OCM, Wani Area</h2>
                         <h3 class="hov-bx-h3-tg">Large-scale overburden removal for sustainable coal extraction</h3>
@@ -515,11 +522,11 @@
                             remove overburden in the UKNI Deep OCM. The work boosts mining productivity and safety while
                             supporting Maharashtra’s energy and industrial needs through improved coal excavation
                             efficiency.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ukniocm')" class="card-button">Read More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="mining">
-                    <img class="image-adjust" src="img/OB Removal for UKNI Deep OCM, Wani Area.jpeg" alt="">
+                    <img class="image-adjust" src="img/projects/coal/IMG-20250820-WA0013.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">OB Removal at Inder-Kamptee Deep OCM, Nagpur</h2>
                         <h3 class="hov-bx-h3-tg">Securing raw fuel supply through targeted mining excavation</h3>
@@ -527,7 +534,8 @@
                             uninterrupted coal supply. Operated by WCL, the project ensures optimized extraction from
                             the Nagpur region, fostering energy security and economic growth in surrounding industrial
                             corridors.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('inderkamptee')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -539,7 +547,8 @@
                             mission project modernizes Yavatmals underground sewerage infrastructure. It ensures better
                             waste management, reduces waterlogging risks, and enhances urban quality of life with
                             long-term sanitation solutions.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('yavatmalamrut')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="metro">
@@ -553,7 +562,8 @@
                             surrounding neighborhoods.
 
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('mumbaimegro')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -565,10 +575,11 @@
                             underground sewerage for expanding urban areas. It includes operation & maintenance
                             services, improving public health, stormwater control, and smart city alignment for the
                             Bhiwandi-Nizampur municipal region.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('bhiwandisewerage')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
-                <div class="card-box" data-category="highway">
+                <!-- <div class="card-box" data-category="highway">
                     <img class="image-adjust" src="img/NH-66 (Parshuram Ghat–Arawali) Upgradation Project.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">NH-66 (Parshuram Ghat–Arawali) Upgradation Project
@@ -580,21 +591,20 @@
                             corridor.</p>
                         <a href="#"> <button class="card-button">Read More</button></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/Water Supply & Water Projects.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Water Supply Scheme for Uddhat & Allied Villages</h2>
-                        <h3 class="hov-bx-h3-tg">Rural water security across Pune’s Indapur Taluka region</h3>
+                        <h3 class="hov-bx-h3-tg">Rural water security across Pune's Indapur Taluka region</h3>
                         <p class="hov-bx-p-tg">This project connects Uddhat, Sansar, Walchandnagar, and surrounding
                             areas under a unified water supply system. It ensures reliable water access to marginalized
                             villages, empowering agriculture, hygiene, and community resilience in drought-prone zones
                             of rural Pune.
-
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('uddhatwater')" class="card-button">Read
+                                More</button></a>
                     </div>
-                </div>
                 <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/Water Supply & Water Projects.jpg" alt="">
                     <div class="partition">
@@ -604,10 +614,11 @@
                             tanks to benefit 29 Jat Taluka villages. Executed by MJP, it ensures sustainable water
                             supply, especially in water-stressed zones, while aligning with Jal Jeevan Mission goals.
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('sanglivillages')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
-                <div class="card-box" data-category="water">
+                <!-- <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Shirol Taluka’s Urban Water Supply Network</h2>
@@ -618,8 +629,8 @@
                             improvements.</p>
                         <a href="#"> <button class="card-button">Read More</button></a>
                     </div>
-                </div>
-                <div class="card-box" data-category="water">
+                </div> -->
+                <!-- <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">18-Village & Chimbali Water Supply Network, Pune</h2>
@@ -629,8 +640,8 @@
                             clean water availability for residents and workers in fast-growing semi-urban areas.</p>
                         <a href="#"> <button class="card-button">Read More</button></a>
                     </div>
-                </div>
-                <div class="card-box" data-category="water">
+                </div> -->
+                <!-- <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Urban Water and Waste Management in Rajasthan</h2>
@@ -643,16 +654,17 @@
                         </p>
                         <a href="#"> <button class="card-button">Read More</button></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="card-box" data-category="water">
-                    <img class=" image-adjust" src="img/Water Supply & Water Projects.jpg" alt="">
+                    <img class=" image-adjust" src="img/projects/akolasitephotos___/DJI_0064.webp" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Jal Jeevan Scheme for Shirpur & 12 Villages</h2>
                         <h3 class="hov-bx-h3-tg">Decentralized rural water supply solution in Akola District</h3>
                         <p class="hov-bx-p-tg">This ₹17.13 Cr initiative brings potable water to remote villages in
                             Patur Taluka. It supports the Jal Jeevan Mission’s aim to provide tap water to every home
                             and strengthens public health and hygiene at the grassroots level.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('shirpurjaljeevan')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -663,23 +675,11 @@
                         <p class="hov-bx-p-tg">Under Maharashtra’s Suvarna Jayanti Abhiyan, this water project supports
                             Manmad and surrounding Nandgaon villages. It ensures reliable supply infrastructure,
                             essential for health and agricultural resilience in semi-urban Nashik zones.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('manmadsuvarna')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
-                <div class="card-box" data-category="water">
-                    <img class="image-adjust" src="img/khamgaon-bot-big (2).jpg" alt="">
-                    <div class="partition">
-                        <h2 class="hov-bx-h2-tg">Ray Nagar Mega Infra: Water, Roads, and Drainage</h2>
-                        <h3 class="hov-bx-h3-tg">Integrated development for 30,000 homes in South Solapur</h3>
-                        <p class="hov-bx-p-tg">This ₹94.78 Cr MJP Solapur project includes water, sewerage, stormwater
-                            drains, and roads for Ray Nagar housing. It transforms the urban ecosystem by delivering
-                            essential civic infrastructure to thousands of residents, contributing to Solapur’s planned
-                            city growth.
-
-                        </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

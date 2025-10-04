@@ -8,6 +8,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="cssfiles/style.css">
     <link rel="stylesheet" href="cssfiles/abtus.css">
+    <script defer src="js/details.js"></script>
     <script defer src="js/test.js"></script>
 
 
@@ -32,6 +33,17 @@
     <!-- JS -->
     <script src="script.js"></script>
     <title>Eagle Infra India | Completed Projects </title>
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS50NSWMCP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS50NSWMCP');
+    </script>
+    <!-- END GOOGLE TAG MANAGER -->
 </head>
 <style>
     .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -130,7 +142,7 @@
                             style="padding-left: 3rem; font-weight: 600; color: black;">Client's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html"
+                        <a class="nav-link" href="career.html"
                             style="padding-left: 3rem; font-weight: 600; color: black;">Career's</a>
                     </li>
                     <!-- <li class="nav-item">
@@ -257,7 +269,8 @@
                             connectivity between NH-95 and NH-1 via the Laddowal Seed Farm. Developed under the Hybrid
                             Annuity
                             Model, it improves traffic flow and infrastructure. </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ludhianaladhowal')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -274,7 +287,8 @@
                             (Operate,
                             Maintain, Transfer) model, this project ensures seamless travel and long-term infrastructure
                             sustainability.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('trichymadurai')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -287,7 +301,8 @@
                             and
                             fosters economic connectivity—supporting Maharashtra's vision for robust, future-ready
                             transportation infrastructure in emerging towns.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('shegaonhighway')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -300,7 +315,8 @@
                             project. Designed with safety, accessibility, and urban efficiency in mind, this initiative
                             reflects our expertise in delivering high-impact civil infrastructure aligned with national
                             connectivity goals.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('lttstation')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -314,7 +330,8 @@
                             public
                             wellness, and sustainable urban development, aligned with Chhattisgarhs vision for modern
                             infrastructure.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('raipurpark')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -328,7 +345,8 @@
                             enables
                             smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway design
                             capabilities.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                       <a href="#"> <button onclick="goToDetails('paithanroad')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -342,7 +360,8 @@
                             project
                             enables smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway
                             design capabilities.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('khamgaonbypass')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -355,7 +374,8 @@
                             and Khamgaon. Designed for better logistics and regional access, Eagle Infra executed this
                             critical highway stretch under high-compliance models, improving connectivity and empowering
                             inter-district commerce across Maharashtra.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                       <a href="#"> <button onclick="goToDetails('vitvabhusaval')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -370,7 +390,8 @@
                             traffic
                             flow, it supports economic activity and ensures long-term, self-sustained infrastructure in
                             Chandrapur district.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                       <a href="#"> <button onclick="goToDetails('jamwarora')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -383,7 +404,8 @@
                             Built
                             to national standards, it ensures efficient traffic regulation and long-term revenue
                             sustainability for regional development.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('chittampatti')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -396,10 +418,11 @@
                             Built
                             to national standards, it ensures efficient traffic regulation and long-term revenue
                             sustainability for regional development.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                         <a href="#"> <button onclick="goToDetails('patancheru')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
-                <div class="card-box" data-category="infra">
+                <!-- <div class="card-box" data-category="infra">
                     <img class="image-adjust" src="img/" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Shopping Centre, Ahmednagar, Maharashtra</h2>
@@ -410,9 +433,9 @@
                             growth,
                             enhances consumer experience, and contributes to the city's economic development through
                             thoughtfully executed retail architecture.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"><button class="card-button">Read More</button></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="card-box" data-category="infra">
                     <img class="image-adjust" src="img/jalgaon01 (2).jpg" alt="">
                     <div class="partition">
@@ -426,7 +449,8 @@
                             and future-ready facilities, the project supports academic growth and regional advancement
                             in
                             Jalgaon, Maharashtra.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('nmujalgaon')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -439,7 +463,8 @@
                             designed with security, efficiency, and confidentiality in mind. This project reflects our
                             capability to support sensitive government operations through reliable, high-standard
                             infrastructure aligned with institutional needs.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                         <a href="#"> <button onclick="goToDetails('anticorruption')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -453,7 +478,8 @@
                             discussions, it ensures comfort, functionality, and professionalism—meeting the evolving
                             needs
                             of modern institutional and corporate gatherings.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('conferencehall')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -467,7 +493,7 @@
                             operational efficiency and public service delivery, the project supports Pune’s expanding
                             urban
                             governance and administrative functions.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('pcmc')" class="card-button">Read More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -480,7 +506,8 @@
                             underscores
                             our commitment to supporting government initiatives aimed at fostering social equity through
                             reliable and inclusive infrastructure.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('socialjustice')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -495,7 +522,8 @@
                             this
                             facility reflects our expertise in delivering mission-critical infrastructure for law
                             enforcement and national safety</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('irbaurangabad')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -507,7 +535,8 @@
                             commitment to environmental sustainability. Designed for high-capacity waste processing and
                             compliance with urban sanitation standards, it supports cleaner ecosystems and healthier
                             communities through efficient wastewater management.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                         <a href="#"> <button onclick="goToDetails('bhiwandistp')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
             </div>

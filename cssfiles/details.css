@@ -32,15 +32,16 @@
     height: 20rem;
     padding: 14% 0 0 0%;
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(205, 255, 182, 0.014)), 
-        url(../img/projects/15.5.\ MLD\ STP\ PANVEL/15.5.\ MLD\ STP\ PANVEL1_Page_15.jpg)no-repeat center center / cover;
+        linear-gradient(rgba(138, 150, 255, 0), rgba(255, 255, 255, 0)), 
+        url(../img/minimalist-blue-white-wave-background.jpg)no-repeat center center / cover;
     background-size: cover;   /* fills the whole area, may crop */
     background-attachment: fixed; /* (optional) gives a parallax effect */
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    
 }
 
     .bh2{
-    color: rgb(255, 255, 255);
+    color: rgb(48, 65, 71);
     text-align: center;
     /* text-shadow: 0px 0px 12px rgb(255, 255, 255); */
     font-size: 40px;
@@ -111,3 +112,8 @@
 }
 #anotherproject{
 }
+
+/* CSS BANNER FOR EACH PROJECT */
+
+
+/* CSS BANNER FOR EACH PROJECT ENDS */

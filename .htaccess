@@ -1,17 +1,12 @@
-# Enable rewriting
+# Enable Rewrite Engine
 RewriteEngine On
-RewriteBase /eagle/
 
-# Make sure .htaccess itself is never served
-<Files ".htaccess">
-    Require all denied
-</Files>
+# Set the base
+RewriteBase /
 
-# Redirect root /eagle/ to index.php
+# If the requested file or directory does not exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [L]
 
-# Optional: force no trailing slash for non-directories
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+?)/$ /$1 [R=301,L]
+# Redirect all non-existing paths to custom 404 page
+RewriteRule ^.*$ /pagenotfound.html [L,R=302]

@@ -32,6 +32,17 @@
 
     <!-- JS -->
     <script src="script.js"></script>
+
+    <!-- GOOGLE TAG MANAGER -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS50NSWMCP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS50NSWMCP');
+    </script>
+    <!-- END GOOGLE TAG MANAGER -->
     <title>Eagle Infra India | Verticals </title>
 </head>
 <style>
@@ -137,7 +148,7 @@
                             style="padding-left: 3rem; font-weight: 600; color: black;">Client's</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="careers.html"
+                        <a class="nav-link" href="career.html"
                             style="padding-left: 3rem; font-weight: 600; color: black;">Career's</a>
                     </li>
                     <!-- <li class="nav-item">
@@ -258,10 +269,8 @@
                             facility processes millions of liters daily, ensuring clean water flows back into the
                             ecosystem while protecting public health and environmental integrity for generations to
                             come.</p>
-                        <!-- <a > -->
-                        <button onclick="goToDetails()" class="card-button">Read More</button>
-                        
-                        <!-- </a> -->
+                        <!-- <a > --><button onclick="goToDetails('panvelstp')" class="card-button">Read
+                            More</button><!-- </a> -->
                     </div>
                 </div>
 
@@ -277,7 +286,7 @@
                             community, this strategic water storage facility ensures uninterrupted supply while
                             maintaining optimal water pressure and quality standards for thousands of families.</p>
                         <a href="#">
-                            <button onclick="goToDetails()" class="card-button">Read More</button>
+                            <button onclick="goToDetails('adivliesrkiravli')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -295,7 +304,7 @@
                             quality of life for residents across the Bhingari region through reliable, safe water
                             access.</p>
                         <a href="#">
-                            <button onclick="goToDetails()" class="card-button">Read More</button>
+                            <button onclick="goToDetails('bhingariesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -311,7 +320,7 @@
                             this infrastructure project delivers consistent water pressure and quality, fostering
                             economic growth and enhancing the daily lives of residents throughout the Ghot area.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('ghotesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -328,7 +337,7 @@
                             distribution while supporting the region's development aspirations and improving public
                             health outcomes.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('juiesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -346,7 +355,7 @@
                             quality standards, contributing to Kalamboli's emergence as a thriving residential and
                             commercial hub.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('kalambohiesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -363,7 +372,7 @@
                             facility ensures optimal distribution across the region, supporting local businesses,
                             schools, and homes with reliable access to clean, safe water every day of the year.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('kalundreesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -379,7 +388,7 @@
                             this facility provides uninterrupted water supply to support the vibrant Kamothe community's
                             residential, commercial, and educational needs with unwavering reliability.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('kamotheesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -396,14 +405,15 @@
                             expertly engineered facility ensures consistent water flow and pressure, supporting
                             Kharghar's continued growth as a premier residential and business destination.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('khargharesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
 
                 <!-- Card 10: KOYNA VILLE ESR -->
                 <div class="card-box" data-category="water">
-                    <img class="image-adjust" id="ld-lu" src="img/projects/KOYNA VILLE/KOYNA VILLE1_Page_11.webp" alt="">
+                    <img class="image-adjust" id="ld-lu" src="img/projects/KOYNA VILLE/KOYNA VILLE1_Page_11.webp"
+                        alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Koyna Ville ESR - Sustainable Water Infrastructure Excellence</h2>
                         <h3 class="hov-bx-h3-tg">Creating Lasting Impact Through Smart Water Solutions</h3>
@@ -413,7 +423,7 @@
                             beauty of the Koyna region, ensuring clean water access for current and future generations.
                         </p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('koynavilleesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -430,7 +440,7 @@
                             and households while maintaining the highest standards of water quality and system
                             reliability.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('murbiesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -446,7 +456,7 @@
                             water supply and optimal pressure distribution, supporting the daily lives of families,
                             businesses, and institutions throughout the Padghe area with unwavering dependability.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('padgheesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -462,7 +472,7 @@
                             provides comprehensive water storage and distribution services, ensuring every resident and
                             business in Pendhar enjoys reliable access to clean, safe water throughout the year.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('pendharesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -480,7 +490,7 @@
                             development and improving quality of life for residents through consistent, high-quality
                             water access.</p>
                         <a href="#">
-                            <button class="card-button">Read More</button>
+                            <button onclick="goToDetails('roadpaliesr')" class="card-button">Read More</button>
                         </a>
                     </div>
                 </div>
@@ -497,7 +507,8 @@
                             execution,
                             offering scalable business spaces that support local enterprise and contribute to Kolhapur’s
                             evolving urban economy.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('eaglespride')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -510,7 +521,8 @@
                             connectivity between NH-95 and NH-1 via the Laddowal Seed Farm. Developed under the Hybrid
                             Annuity
                             Model, it improves traffic flow and infrastructure. </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ludhianaladhowal')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -527,7 +539,8 @@
                             (Operate,
                             Maintain, Transfer) model, this project ensures seamless travel and long-term infrastructure
                             sustainability.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('trichymadurai')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -540,7 +553,8 @@
                             and
                             fosters economic connectivity—supporting Maharashtra's vision for robust, future-ready
                             transportation infrastructure in emerging towns.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('shegaonhighway')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra" id="lttstation">
@@ -553,7 +567,8 @@
                             project. Designed with safety, accessibility, and urban efficiency in mind, this initiative
                             reflects our expertise in delivering high-impact civil infrastructure aligned with national
                             connectivity goals.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('lttstation')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -567,7 +582,8 @@
                             public
                             wellness, and sustainable urban development, aligned with Chhattisgarhs vision for modern
                             infrastructure.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('raipurpark')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -581,7 +597,8 @@
                             enables
                             smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway design
                             capabilities.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('paithanroad')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -595,7 +612,8 @@
                             project
                             enables smooth transit, eases congestion, and exemplifies Eagle Infras trusted urban highway
                             design capabilities.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('khamgaonbypass')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -608,7 +626,8 @@
                             and Khamgaon. Designed for better logistics and regional access, Eagle Infra executed this
                             critical highway stretch under high-compliance models, improving connectivity and empowering
                             inter-district commerce across Maharashtra.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('vitvabhusaval')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -623,7 +642,8 @@
                             traffic
                             flow, it supports economic activity and ensures long-term, self-sustained infrastructure in
                             Chandrapur district.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('jamwarora')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -636,7 +656,8 @@
                             Built
                             to national standards, it ensures efficient traffic regulation and long-term revenue
                             sustainability for regional development.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('chittampatti')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="tollplaza">
@@ -649,7 +670,8 @@
                             Built
                             to national standards, it ensures efficient traffic regulation and long-term revenue
                             sustainability for regional development.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('patancheru')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <!-- <div class="card-box" data-category="infra">
@@ -663,7 +685,7 @@
                             growth,
                             enhances consumer experience, and contributes to the city's economic development through
                             thoughtfully executed retail architecture.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('')" class="card-button">Read More</button></a>
                     </div>
                 </div> -->
                 <div class="card-box" data-category="infra">
@@ -679,7 +701,8 @@
                             and future-ready facilities, the project supports academic growth and regional advancement
                             in
                             Jalgaon, Maharashtra.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('nmujalgaon')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -692,7 +715,8 @@
                             designed with security, efficiency, and confidentiality in mind. This project reflects our
                             capability to support sensitive government operations through reliable, high-standard
                             infrastructure aligned with institutional needs.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('anticorruption')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra" id="conference">
@@ -706,7 +730,8 @@
                             discussions, it ensures comfort, functionality, and professionalism—meeting the evolving
                             needs
                             of modern institutional and corporate gatherings.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('conferencehall')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -720,20 +745,19 @@
                             operational efficiency and public service delivery, the project supports Pune’s expanding
                             urban
                             governance and administrative functions.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('pcmc')" class="card-button">Read More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
                     <img class="image-adjust" src="img/pwd-nashik1-big (2).jpg" alt="">
                     <div class="partition">
-                        <h2 class="hov-bx-h2-tg">Building Institutional Spaces that Promote Equity and Inclusion</h2>
+                        <h2 class="hov-bx-h2-tg">Facility for the Social Justice Department in Adgaon, Nashik </h2>
                         <h3 class="hov-bx-h3-tg">Building Institutional Spaces that Promote Equity and Inclusion</h3>
-                        <p class="hov-bx-p-tg">The facility for the Social Justice Department in Adgaon, Nashik was
-                            developed with a focus on dignity, accessibility, and administrative efficiency. It
-                            underscores
+                        <p class="hov-bx-p-tg">It underscores
                             our commitment to supporting government initiatives aimed at fostering social equity through
                             reliable and inclusive infrastructure.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('socialjustice')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -748,7 +772,8 @@
                             this
                             facility reflects our expertise in delivering mission-critical infrastructure for law
                             enforcement and national safety</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('irbaurangabad')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -760,7 +785,8 @@
                             commitment to environmental sustainability. Designed for high-capacity waste processing and
                             compliance with urban sanitation standards, it supports cleaner ecosystems and healthier
                             communities through efficient wastewater management.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('bhiwandistp')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <!-- new -->
@@ -776,7 +802,8 @@
                             development. By extending its underground sewerage network, the city aims to enhance waste
                             management, minimize health risks, and support a more sustainable future. Its a vital step
                             toward modern infrastructure that keeps pace with growing civic needs.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ambernathsewer')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -790,7 +817,8 @@
                             cycles and climate exposure, the structure plays a key role in maintaining pressure balance,
                             improving supply reliability, and preparing the city for future urban expansion. It's a
                             testament to smart, scalable infrastructure supporting real community needs.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('badlapurreservoir')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -807,7 +835,8 @@
                             smoother travel and reduced congestion for thousands of daily commuters and cargo
                             transporters. This project plays a key role in sustaining seamless Mumbai–Pune connectivity.
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('khopolikhalapur')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -824,7 +853,8 @@
                             walls, and box culverts are being concreted and reinforced.Simultaneously, major structures
                             such as flyover pile foundations and RE walls are under execution, supported by precise
                             material handling — including soil/rock loading and dismantling of old BT layers.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('chiplunroad')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -841,7 +871,8 @@
                             structure ensures seamless monitoring, reporting, and coordination across the entire STP
                             process. Its modern layout supports both administrative tasks and on-ground operational
                             oversight.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('kdmcadmin')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -857,7 +888,8 @@
                             and G+4 buildings equipped with essential amenities. The project supports the government's
                             mission of delivering dignified, affordable housing to economically weaker and low-income
                             sections of society</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('hinghatmahada')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="infra">
@@ -872,7 +904,8 @@
                             reflects sustainable construction practices, accessibility features, and durability,
                             aligning with Pimpri-Chinchwad's urban development vision and citizen-centric governance
                             approach.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('pcmcjijamata')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -885,7 +918,8 @@
                             well-structured, RCC-lined channel with durable embankments and integrated fencing. It
                             mitigates flooding risks, improves flow regulation, and enhances public safety, contributing
                             to long-term urban sustainability and waterway management.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ranchiriver')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -899,8 +933,11 @@
                                     structure, engineered for high-capacity water treatment and distribution. The
                                     facility supports municipal water demands, ensuring clean water supply through
                                     modern filtration systems, sedimentation zones, and structural durability for
-                                    long-term operation.</p>
-                                <a href="#"> <button class="card-button">Read More</button></a>
+                                    long-term operation.
+                                </p>
+                               <a href="#"> <button onclick="goToDetails('thanewtp')" class="card-button"> Read
+                                More </button>
+                            </a>
                     </div>
                 </div>
                 <!-- new ends -->
@@ -916,7 +953,8 @@
                             including Shembal Pimpari, Gunj, Mahur, Darwha, and Manora. It boosts accessibility,
                             facilitates smoother logistics, and supports rural-urban trade development across
                             Maharashtra's interior road networks.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('yavatmalroads')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
@@ -929,11 +967,12 @@
                             movement across key industrial belts. The work enhances freight efficiency and regional
                             economic activity, serving as a critical artery between Amravati and Chikhli under national
                             connectivity goals.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('amravatichikhli')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="mining">
-                    <img class="image-adjust" src="img/OB Removal for UKNI Deep OCM, Wani Area.jpeg" alt="">
+                    <img class="image-adjust" src="img/projects/coal/IMG-20250820-WA0012.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">OB Removal for UKNI Deep OCM, Wani Area</h2>
                         <h3 class="hov-bx-h3-tg">Large-scale overburden removal for sustainable coal extraction</h3>
@@ -941,11 +980,11 @@
                             remove overburden in the UKNI Deep OCM. The work boosts mining productivity and safety while
                             supporting Maharashtra’s energy and industrial needs through improved coal excavation
                             efficiency.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('ukniocm')" class="card-button">Read More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="mining">
-                    <img class="image-adjust" src="img/OB Removal for UKNI Deep OCM, Wani Area.jpeg" alt="">
+                    <img class="image-adjust" src="img/projects/coal/IMG-20250820-WA0013.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">OB Removal at Inder-Kamptee Deep OCM, Nagpur</h2>
                         <h3 class="hov-bx-h3-tg">Securing raw fuel supply through targeted mining excavation</h3>
@@ -953,7 +992,8 @@
                             uninterrupted coal supply. Operated by WCL, the project ensures optimized extraction from
                             the Nagpur region, fostering energy security and economic growth in surrounding industrial
                             corridors.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('inderkamptee')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -965,7 +1005,8 @@
                             mission project modernizes Yavatmals underground sewerage infrastructure. It ensures better
                             waste management, reduces waterlogging risks, and enhances urban quality of life with
                             long-term sanitation solutions.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('yavatmalamrut')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="metro">
@@ -979,7 +1020,8 @@
                             surrounding neighborhoods.
 
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('mumbaimegro')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -991,34 +1033,37 @@
                             underground sewerage for expanding urban areas. It includes operation & maintenance
                             services, improving public health, stormwater control, and smart city alignment for the
                             Bhiwandi-Nizampur municipal region.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('bhiwandisewerage')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="highway">
                     <img class="image-adjust" src="img/NH-66 (Parshuram Ghat–Arawali) Upgradation Project.jpg" alt="">
                     <div class="partition">
-                        <h2 class="hov-bx-h2-tg">NH-66 (Parshuram Ghat–Arawali) Upgradation Project
+                        <h2 class="hov-bx-h2-tg">NH-66 (Parshuram Ghat-Arawali) Upgradation Project
                         </h2>
                         <h3 class="hov-bx-h3-tg">Enhancing national highway safety and travel time efficiency</h3>
                         <p class="hov-bx-p-tg">With ₹302.5 Cr investment by MoRTH, this road rehabilitation between
                             Parshuram Ghat and Arawali ensures better slope protection and smoother travel. It’s part of
                             the strategic coastal highway upgrade for safer transport across Maharashtra’s western
                             corridor.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('parshuramghat')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
                     <img class="image-adjust" src="img/Water Supply & Water Projects.jpg" alt="">
                     <div class="partition">
                         <h2 class="hov-bx-h2-tg">Water Supply Scheme for Uddhat & Allied Villages</h2>
-                        <h3 class="hov-bx-h3-tg">Rural water security across Pune’s Indapur Taluka region</h3>
+                        <h3 class="hov-bx-h3-tg">Rural water security across Pune's Indapur Taluka region</h3>
                         <p class="hov-bx-p-tg">This project connects Uddhat, Sansar, Walchandnagar, and surrounding
                             areas under a unified water supply system. It ensures reliable water access to marginalized
                             villages, empowering agriculture, hygiene, and community resilience in drought-prone zones
                             of rural Pune.
 
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('uddhatwater')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -1030,7 +1075,8 @@
                             tanks to benefit 29 Jat Taluka villages. Executed by MJP, it ensures sustainable water
                             supply, especially in water-stressed zones, while aligning with Jal Jeevan Mission goals.
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('sanglivillages')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <!-- <div class="card-box" data-category="water">
@@ -1042,7 +1088,7 @@
                             distribution systems. It ensures equitable access, strengthens community well-being, and
                             supports population growth in Kolhapur’s suburban landscape through planned water utility
                             improvements.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('')" class="card-button">Read More</button></a>
                     </div>
                 </div> -->
                 <!-- <div class="card-box" data-category="water">
@@ -1053,7 +1099,7 @@
                         <p class="hov-bx-p-tg">MJP’s ₹152.47 Cr initiative covers Chakan’s industrial belt and Chimbali
                             via two major water supply systems. It addresses rapid urbanization near Pune, ensuring
                             clean water availability for residents and workers in fast-growing semi-urban areas.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('')" class="card-button">Read More</button></a>
                     </div>
                 </div> -->
                 <!-- <div class="card-box" data-category="water">
@@ -1066,7 +1112,7 @@
                             Rajasthan’s secondary towns by combining water supply and sewage systems under a single
                             urban development vision.
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('')" class="card-button">Read More</button></a>
                     </div>
                 </div> -->
                 <div class="card-box" data-category="water">
@@ -1077,7 +1123,8 @@
                         <p class="hov-bx-p-tg">This ₹17.13 Cr initiative brings potable water to remote villages in
                             Patur Taluka. It supports the Jal Jeevan Mission’s aim to provide tap water to every home
                             and strengthens public health and hygiene at the grassroots level.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('shirpurjaljeevan')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <div class="card-box" data-category="water">
@@ -1088,7 +1135,8 @@
                         <p class="hov-bx-p-tg">Under Maharashtra’s Suvarna Jayanti Abhiyan, this water project supports
                             Manmad and surrounding Nandgaon villages. It ensures reliable supply infrastructure,
                             essential for health and agricultural resilience in semi-urban Nashik zones.</p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('manmadsuvarna')" class="card-button">Read
+                                More</button></a>
                     </div>
                 </div>
                 <!-- <div class="card-box" data-category="water">
@@ -1101,7 +1149,7 @@
                             essential civic infrastructure to thousands of residents, contributing to Solapur’s planned
                             city growth.
                         </p>
-                        <a href="#"> <button class="card-button">Read More</button></a>
+                        <a href="#"> <button onclick="goToDetails('')" class="card-button">Read More</button></a>
                     </div>
                 </div> -->
             </div>
